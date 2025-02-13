@@ -146,25 +146,23 @@ Nosso aplicativo vai além do agendamento! Além de permitir que seus clientes m
 
 
     <!-- Modal -->
-    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
-        <div class="bg-white text-black rounded-lg shadow-lg p-8 w-96">
-            <h2 id="modal-title" class="text-2xl font-semibold mb-4">App Candidatos</h2>
-            <p id="modal-description" class="text-lg mb-4">Descrição do aplicativo.</p>
+<div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden overflow-y-auto">
+    <div class="bg-white text-black rounded-lg shadow-lg p-8 w-96 max-w-full max-h-[90vh] overflow-y-auto">
+        <h2 id="modal-title" class="text-2xl font-semibold mb-4">Título do Modal</h2>
+        <p id="modal-description" class="text-lg mb-4">Descrição do aplicativo.</p>
 
-            <!-- Botão WhatsApp -->
-            <a id="whatsapp-modal-link" href="#" target="_blank"
-                class="mt-4 text-white bg-green-500 px-4 py-2 rounded-full flex items-center justify-center hidden">
-                <span class="mr-2 text-xs">Solicite informações pelo WhatsApp</span>
+        <!-- Botão WhatsApp -->
+        <a id="whatsapp-modal-link" href="#" target="_blank"
+            class="mt-4 text-white bg-green-500 px-4 py-2 rounded-full flex items-center justify-center hidden">
+            <span class="mr-2 text-xs">Solicite informações pelo WhatsApp</span>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png"
+                alt="WhatsApp" class="w-5 h-5">
+        </a>
 
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png"
-                    alt="WhatsApp" class="w-5 h-5"> <!-- Tamanho da imagem também ajustado -->
-            </a>
-
-            <button class="bg-[#34D399] text-black px-4 py-2 rounded mt-4 text-xs"
-                onclick="closeModal()">Fechar</button>
-
-        </div>
+        <button class="bg-[#34D399] text-black px-4 py-2 rounded mt-4 text-xs" onclick="closeModal()">Fechar</button>
     </div>
+</div>
+
 
 
     <!-- Footer -->

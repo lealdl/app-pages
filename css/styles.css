@@ -2,8 +2,4 @@
 body {
     font-family: 'Sora', sans-serif;
 }
-.modal-content {
-    max-height: 80vh; /* Define um limite máximo para o conteúdo */
-    overflow-y: auto;  /* Permite rolagem quando o conteúdo for maior que o modal */
-    padding: 20px;
-}
+
