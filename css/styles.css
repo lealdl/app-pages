@@ -1,5 +1,6 @@
 /* styles.css */
 body {
+    background-color: #0C0F16;
     font-family: 'Sora', sans-serif;
 }
 #qrcode canvas {
