@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplicativos da Empresa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.4/dist/tailwind.min.js"
+      defer
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      body {
+        background-color: #0c0f16;
+      }
+    </style>
+  </head>
+
+  <body class="text-white">
+    <!-- Menu de Navegação -->
+    <header class="bg-[#012025] p-4">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div class="text-2xl font-semibold">Clinihard Sistemas</div>
+      </div>
+    </header>
+
+    <!-- Seção Introdução -->
+    <section id="home" class="text-center py-32 bg-[#012025] relative">
+      <div
+        class="absolute inset-0 bg-cover bg-center"
+        style="background-image: url('assets/dev-codando-javascript_capa.webp')"
+      ></div>
+      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+      <!-- Camada de opacidade -->
+      <div class="relative z-10">
+        <h1 class="text-3xl font-bold mb-2">
+          Soluções Inovadoras em Desenvolvimento de Aplicativos e Websites
+        </h1>
+        <p class="text-xl max-w-4xl mx-auto">
+          Explore os aplicativos personalizados que desenvolvemos para
+          transformar a sua experiência digital e otimizar o seu dia a dia
+          profissional.
+        </p>
+      </div>
+    </section>
+
+    <!-- Seção Aplicativos -->
+    <section id="apps" class="py-16">
+      <div
+        class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+      >
+        <!-- App Hamburgueria -->
+        <div
+          class="bg-[#1F2937] rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 ease-in-out hover:translate-y-2 hover:bg-opacity-80 hover:bg-black"
+        >
+          <img
+            src="assets/capa-hamburgueria.png"
+            alt="App Hamburgueria"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold">App Hamburgueria</h3>
+            <p class="mt-2">
+              Praticidade e rapidez na hora de você pedir seu lanche.
+            </p>
+            <button
+              class="mt-4 bg-[#34D399] text-black px-4 py-2 rounded"
+              onclick="openModal('App Hamburgueria', 'Você adiciona seus itens no carrinho e o pedido é enviado diretamente ao whatsapp da hamburgueria. Sem checkouts complicados. Simples e direto! O App possui área admin integrada ou seja, o admin tem todo o controle sobre o app.', 'App Hamburgueria')"
+            >
+              Saiba mais
+            </button>
+            <!-- Link para o app
+                <a href="https://dev-burguer-azure.vercel.app/" target="_blank"
+                    class="mt-4 text-white bg-blue-500 px-4 py-2 rounded-full flex items-center justify-center text-sm">
+                    Ver App
+                </a> -->
+          </div>
+        </div>
+
+        <!-- App Agendamento Barbearia -->
+        <div
+          class="bg-[#1F2937] rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 ease-in-out hover:translate-y-2 hover:bg-opacity-80 hover:bg-black"
+        >
+          <img
+            src="assets/capa-salao.png"
+            alt="App Agendamento Barbearia"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold">App Agendamento Barbearia</h3>
+            <p class="mt-2">
+              Gerencie seu fluxo de trabalho com eficiência, mantendo tudo no
+              lugar.
+            </p>
+            <button
+              class="mt-4 bg-[#34D399] text-black px-4 py-2 rounded"
+              onclick="openModal('App Agendamento Barbearia', 'Transforme a gestão do seu negócio com o App Agendamento Barbearia! Agilize seus processos de agendamento, organize os horários dos clientes e maximize a eficiência do seu fluxo de trabalho. Com uma interface simples e intuitiva, você mantém tudo em ordem, garantindo uma experiência impecável para você e seus clientes.', 'App Agendamento Barbearia')"
+            >
+              Saiba mais
+            </button>
+            <!-- Link para o app 
+            <a
+              href="https://agendamento-barbearia-beta.vercel.app/"
+              target="_blank"
+              class="mt-4 text-white bg-blue-500 px-4 py-2 rounded-full flex items-center justify-center text-sm"
+            >
+              Ver App
+            </a>-->
+          </div>
+        </div>
+
+        <!-- App Anamnese Veterinária -->
+        <div
+          class="bg-[#1F2937] rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 ease-in-out hover:translate-y-2 hover:bg-opacity-80 hover:bg-black"
+        >
+          <img
+            src="assets/capa-anamnese.png"
+            alt="App Anamnese Veterinária"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold">App Anamnese Veterinária</h3>
+            <p class="mt-2">
+              Uma solução prática para deixar de lado as fichas de papel.
+            </p>
+            <button
+              class="mt-4 bg-[#34D399] text-black px-4 py-2 rounded"
+              onclick="openModal('App Anamnese Veterinária', 'Simplifique o dia a dia da sua clínica com o App Vet Assist. Esqueça as fichas de papel e organize todas as informações dos seus pacientes em um único lugar. Com um design intuitivo, o app permite registrar dados de forma rápida e eficiente, garantindo praticidade e segurança para você e sua equipe.', 'App Anamnese Veterinária')"
+            >
+              Saiba mais
+            </button>
+            <!-- Link para o app 
+            <a
+              href="https://anamnese-vet.vercel.app/"
+              target="_blank"
+              class="mt-4 text-white bg-blue-500 px-4 py-2 rounded-full flex items-center justify-center text-sm"
+            >
+              Ver App
+            </a>-->
+          </div>
+        </div>
+
+        <!-- App Candidatos -->
+        <div
+          class="bg-[#1F2937] rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 ease-in-out hover:translate-y-2 hover:bg-opacity-80 hover:bg-black"
+        >
+          <img
+            src="assets/capa-candidatos.png"
+            alt="App Candidatos"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold">App Candidatos</h3>
+            <p class="mt-2">
+              Uma solução prática para enviar seu currículo com facilidade.
+            </p>
+            <button
+              class="mt-4 bg-[#34D399] text-black px-4 py-2 rounded"
+              onclick="openModal('App Candidatos', 'Este aplicativo, desenvolvido para uma empresa de RH, tem como objetivo facilitar o cadastro de candidatos nas vagas oferecidas pela empresa.', 'App Candidatos')"
+            >
+              Saiba mais
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div
+      id="modal"
+      class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden"
+    >
+      <div class="bg-white text-black rounded-lg shadow-lg p-8 w-96">
+        <h2 id="modal-title" class="text-2xl font-semibold mb-4">
+          App Candidatos
+        </h2>
+        <p id="modal-description" class="text-lg mb-4">
+          Descrição do aplicativo.
+        </p>
+
+        <!-- Botão WhatsApp -->
+        <a
+          id="whatsapp-modal-link"
+          href="#"
+          target="_blank"
+          class="mt-4 text-white bg-green-500 px-4 py-2 rounded-full flex items-center justify-center hidden"
+        >
+          <span class="mr-2 text-xs">Solicite informações pelo WhatsApp</span>
+
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png"
+            alt="WhatsApp"
+            class="w-5 h-5"
+          />
+          <!-- Tamanho da imagem também ajustado -->
+        </a>
+
+        <button
+          class="bg-[#34D399] text-black px-4 py-2 rounded mt-4 text-xs"
+          onclick="closeModal()"
+        >
+          Fechar
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="dynamic-footer"></div>
+
+    <!-- Scripts -->
+    <script type="module" src="./src/coponentes/footer.js"></script>
+    <script type="module" src="js/whatsapp.js"></script>
+
+    <script></script>
+  </body>
+</html>
